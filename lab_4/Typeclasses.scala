@@ -48,7 +48,7 @@ object Typeclasses {
 
     // e) Реализуйте функцию Smash для типа String. Необходимо выполнить конкатенацию строк, которые будут получены в качестве параметра.
     implicit object SmashString extends Smash[String] {
-      def smash(x: String, y: String): String = x concat  y
+      def smash(x: String, y: String): String = x concat y
     }
   }
 
